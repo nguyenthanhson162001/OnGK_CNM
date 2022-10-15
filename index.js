@@ -16,6 +16,8 @@ app.use(
 );
 app.use(express.json());
 
+app.use("/static", express.static("public"));
+
 // config dynamo DB
 const tableName = "products";
 AWS.config.update({
