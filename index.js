@@ -165,7 +165,7 @@ const deleteFileS3ByLink = async (linkFile) => {
       .promise();
     console.log("delete success file " + fileName);
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
